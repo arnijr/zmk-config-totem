@@ -52,7 +52,7 @@
 / {
     behaviors {
 
-/* --- TailorKey HRM Behaviors for Toucan (42-key Matrix) --- */
+/* --- TailorKey HRM Behaviors for Totem (38-key Matrix) --- */
 
         // Left Pinky
         hrm_lp: hrm_lp {
@@ -261,7 +261,7 @@
                          &kp LC(Z)            &kp LC(X)            &kp LC(C)            &kp LC(V)            &kp LC(LS(Z))            &kp LC(Y)            &kp LC(V)            &kp LC(C)            &kp LC(X)            &kp LC(Z)
                          &kp LGUI             &kp LALT             &kp LCTRL            &kp LSHFT            &caps_word               &kp CAPS             &kp LEFT             &kp DOWN             &kp UP               &kp RIGHT
     &kp LC(Z)            &none                &kp LA(F4)           &kp LC(F4)           &kp ESC              &none                    &kp INS              &kp HOME             &kp PG_DN            &kp PG_UP            &kp END              &kp LC(Z)
-                                                     &none                &none                &none                    &kp RET              &kp BSPC             &kp DEL
+                                                                   &none                &none                &none                    &kp RET              &kp BSPC             &kp DEL
             >;
         };
 
@@ -272,7 +272,7 @@
                          &none                &kp RALT             &none                &none                &none                    &kp K_REDO           &kp K_PASTE          &kp K_COPY           &kp K_CUT            &kp K_UNDO
                          &kp LGUI             &kp LALT             &kp LCTRL            &kp LSHFT            &none                    &none                &mmv MOVE_LEFT       &mmv MOVE_DOWN       &mmv MOVE_UP         &mmv MOVE_RIGHT
     &none                &none                &none                &none                &none                &none                    &none                &msc SCRL_RIGHT      &msc SCRL_UP         &msc SCRL_DOWN       &msc SCRL_LEFT       &kp K_UNDO
-                                                     &none                &none                &none                    &mkp RCLK            &mkp LCLK            &mkp MCLK
+                                                                   &none                &none                &none                    &mkp RCLK            &mkp LCLK            &mkp MCLK
             >;
         };
 
@@ -283,7 +283,7 @@
                          &kp LS(LBKT)         &kp LS(N7)           &kp LS(N8)           &kp LS(N9)           &kp LS(RBKT)             &none                &none                &none                &kp RALT             &none
                          &kp LS(FSLH)         &kp LS(N4)           &kp LS(N5)           &kp LS(N6)           &kp LS(EQUAL)            &none                &kp RSHFT            &kp RCTRL            &kp LALT             &kp RGUI
     &kp LS(LBKT)         &m_tlsp              &kp LS(N1)           &kp LS(N2)           &kp LS(N3)           &kp LS(BSLH)             &none                &none                &kp RA(FSLH)         &kp RA(N1)           &kp RA(S)            &none
-                                                     &kp LS(N9)           &kp LS(N0)           &kp UNDER                &none                &none                &none
+                                                                   &kp LS(N9)           &kp LS(N0)           &kp UNDER                &none                &none                &none
             >;
         };
 
@@ -294,7 +294,7 @@
                          &kp LBKT             &kp N7               &kp N8               &kp N9               &kp RBKT                 &none                &none                &none                &kp RALT             &none
                          &kp FSLH             &kp N4               &kp N5               &kp N6               &kp EQUAL                &none                &kp RSHFT            &kp RCTRL            &kp LALT             &kp RGUI
     &kp LBKT             &m_tksp              &kp N1               &kp N2               &kp N3               &kp BSLH                 &none                &kp GRAVE            &kp TILDE            &kp DQT              &kp SQT              &none
-                                                     &kp DOT              &kp N0               &kp MINUS                &none                &none                &none
+                                                                   &kp DOT              &kp N0               &kp MINUS                &none                &none                &none
             >;
         };
 
@@ -305,7 +305,7 @@
                          &kp F12              &kp F7               &kp F8               &kp F9               &kp PSCRN                &none                &none                &none                &kp RALT             &none
                          &kp F11              &kp F4               &kp F5               &kp F6               &kp SLCK                 &none                &kp RSHFT            &kp RCTRL            &kp LALT             &kp RGUI
     &kp F12              &kp F10              &kp F1               &kp F2               &kp F3               &kp K_PP                 &none                &none                &none                &none                &none                &none
-                                                     &kp SPACE            &kp TAB              &none                    &none                &none                &none
+                                                                   &kp SPACE            &kp TAB              &none                    &none                &none                &none
             >;
         };
 
@@ -315,8 +315,8 @@
 //  |          0         |         1          |         2          |         3          |         4          |         5          |   |         6          |         7          |         8          |         9          |         10         |         11         |
                          &bt BT_SEL 0         &bt BT_SEL 1         &bt BT_SEL 2         &bt BT_SEL 3         &bt BT_SEL 4             &none                &none                &none                &none                &none
                          &bt BT_PRV           &bt BT_NXT           &none                &bt BT_CLR_ALL       &bt BT_CLR               &none                &kp C_PREV           &kp C_VOL_DN         &kp C_VOL_UP         &kp C_NEXT
-    &bt BT_SEL 0         &bootloader          &sys_reset           &studio_unlock       &none                &out OUT_USB             &none                &none                &none                &none                &bootloader          &none
-                                                                          &none                &none                    &none                &kp C_STOP           &kp C_PP             &kp C_MUTE
+    &none                &bootloader          &sys_reset           &studio_unlock       &none                &out OUT_USB             &none                &none                &none                &none                &bootloader          &none
+                                                                   &none                &none                &none                    &kp C_STOP           &kp C_PP             &kp C_MUTE
             >;
         };
         extra_1 {
