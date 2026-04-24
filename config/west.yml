@@ -5,7 +5,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: 84074f76231e3305a4073d8376135835c0559f6d # This is a specific "known good" commit
+      revision: main
       import: app/west.yml
   self:
     path: config
